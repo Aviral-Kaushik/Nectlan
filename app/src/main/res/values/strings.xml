@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Netclan</string>
+    <string name="dummy_location">Siwaya-Jamalullpur</string>
+    <string name="dummy_hello">Howdy Aviral Kaushik !!</string>
+    <string name="select_your_availability">Select Your Availability</string>
+    <string name="add_your_status">Add Your Status</string>
+    <string name="dummy_word_count">0/250</string>
+    <string name="hint">Hi community! I am open to new connections.</string>
+    <string name="select_hyper_local_distance">Select Hyper local Distance</string>
+    <string name="dummy_Min_distance">1 Km</string>
+    <string name="dummy_max_distance">100 Km</string>
+    <string name="select_purpose">Select Purpose</string>
+    <string name="coffee">Coffee</string>
+    <string name="business">Business</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="friendship">Friendship</string>
+    <string name="movies">Movies</string>
+    <string name="dinning">Dinning</string>
+    <string name="matrimony">Matrimony</string>
+    <string name="dating">Dating</string>
+    <string name="save_explore"><![CDATA[Save & Explore]]></string>
+    <string name="refine">Refine</string>
+    <string name="explore">Explore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="notes">Notes</string>
+    <string name="jobs">Jobs</string>
+    <string name="card">Business Cards</string>
+    <string name="buy">Buy - Sell - Rent</string>
+</resources>

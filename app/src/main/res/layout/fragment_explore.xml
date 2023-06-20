@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/coordinate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#133C58"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/explore_container">
+
+
+        </FrameLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:src="@drawable/ic_add"
+        android:layout_marginBottom="32dp"
+        app:maxImageSize="32dp"
+        android:layout_marginEnd="38dp"
+        app:tint="@null"
+        app:backgroundTint="@color/app_bar_color"
+        app:elevation="5dp"
+        android:contentDescription="@string/hint"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<!--    // cards, jobs, notex, buy sell rent-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#F1EE20"
+        android:src="@drawable/ic_note"
+        android:contentDescription="@string/hint"
+        app:maxImageSize="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/fab_add"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notes"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/app_bar_color"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/fab_notes"
+        app:layout_constraintEnd_toStartOf="@id/fab_notes"
+        app:layout_constraintTop_toTopOf="@id/fab_notes"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#F1EE20"
+        android:src="@drawable/ic_bag"
+        android:visibility="invisible"
+        android:contentDescription="@string/hint"
+        app:layout_constraintBottom_toTopOf="@id/fab_notes"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jobs"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/app_bar_color"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/fab_jobs"
+        app:layout_constraintEnd_toStartOf="@id/fab_jobs"
+        app:layout_constraintTop_toTopOf="@id/fab_jobs"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#F1EE20"
+        android:src="@drawable/ic_card"
+        android:contentDescription="@string/hint"
+        app:maxImageSize="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/fab_jobs"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/app_bar_color"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/fab_card"
+        app:layout_constraintEnd_toStartOf="@id/fab_card"
+        app:layout_constraintTop_toTopOf="@id/fab_card"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#F1EE20"
+        android:src="@drawable/ic_bag"
+        android:contentDescription="@string/hint"
+        android:visibility="invisible"
+        app:maxImageSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/fab_card"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buy"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/app_bar_color"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/fab_buy"
+        app:layout_constraintEnd_toStartOf="@id/fab_buy"
+        app:layout_constraintTop_toTopOf="@id/fab_buy"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
